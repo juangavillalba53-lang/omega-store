@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omega Store TCG</title>
+  <meta name="description"
+    content="Tu tienda de cartas coleccionables, TCG y juegos de mesa. Pokémon, One Piece, Lorcana, Magic, figuras y más." />
+  <meta property="og:title" content="Omega Store TCG" />
+  <meta property="og:description" content="Tu tienda de cartas coleccionables, TCG y juegos de mesa." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="Omega Store TCG" class="logo-img" />
+        <div class="logo-text-wrap">
+          <span class="logo-name">OMEGA <em>STORE</em></span>
+          <span class="logo-sub">TCG</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#categorias">Categorías</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#productos" class="mobile-link">Productos</a>
+      <a href="#categorias" class="mobile-link">Categorías</a>
+      <a href="#nosotros" class="mobile-link">Nosotros</a>
+      <a href="#contacto" class="mobile-link">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+      <div class="hero-glow glow-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        TCG · Coleccionables · Juegos de Mesa
+      </div>
+      <h1 class="hero-title">
+        Donde cada carta<br />
+        <span class="title-accent">cuenta una historia</span>
+      </h1>
+      <p class="hero-sub">
+        Pokémon, One Piece, Lorcana, Magic y mucho más.<br />
+        Tu tienda de confianza en coleccionables.
+      </p>
+      <div class="hero-actions">
+        <a href="#productos" class="btn btn-primary">Ver productos</a>
+        <a href="#contacto" class="btn btn-ghost">Contactarnos</a>
+      </div>
+    </div>
+    <div class="hero-cards-float">
+      <div class="float-card fc-1">
+        <div class="fc-inner">
+          <img src="images/hero-pokemon.jpg" alt="Pokémon TCG"
+            onerror="this.parentElement.classList.add('fc-placeholder'); this.remove();" />
+          <div class="fc-label">Pokémon</div>
+        </div>
+      </div>
+      <div class="float-card fc-2">
+        <div class="fc-inner">
+          <img src="images/hero-onepiece.jpg" alt="One Piece TCG"
+            onerror="this.parentElement.classList.add('fc-placeholder'); this.remove();" />
+          <div class="fc-label">One Piece</div>
+        </div>
+      </div>
+      <div class="float-card fc-3">
+        <div class="fc-inner">
+          <img src="images/hero-magic.jpg" alt="Magic TCG"
+            onerror="this.parentElement.classList.add('fc-placeholder'); this.remove();" />
+          <div class="fc-label">Magic</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>Pokémon TCG</span><span class="sep">✦</span>
+      <span>One Piece</span><span class="sep">✦</span>
+      <span>Magic: The Gathering</span><span class="sep">✦</span>
+      <span>Lorcana</span><span class="sep">✦</span>
+      <span>Figuras de colección</span><span class="sep">✦</span>
+      <span>Juegos de Mesa</span><span class="sep">✦</span>
+      <span>Sobres y Boosters</span><span class="sep">✦</span>
+      <span>Sleeves y accesorios</span><span class="sep">✦</span>
+      <span>Pokémon TCG</span><span class="sep">✦</span>
+      <span>One Piece</span><span class="sep">✦</span>
+      <span>Magic: The Gathering</span><span class="sep">✦</span>
+      <span>Lorcana</span><span class="sep">✦</span>
+      <span>Figuras de colección</span><span class="sep">✦</span>
+      <span>Juegos de Mesa</span><span class="sep">✦</span>
+      <span>Sobres y Boosters</span><span class="sep">✦</span>
+      <span>Sleeves y accesorios</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- CATEGORIAS -->
+  <section class="section" id="categorias">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Explorar</span>
+        <h2 class="section-title">Categorías</h2>
+      </div>
+      <div class="categories-grid">
+
+        <button class="cat-card cat-pokemon" data-filter="pokemon">
+          <div class="cat-bg"></div>
+          <div class="cat-content">
+            <div class="cat-icon">⚡</div>
+            <h3>Pokémon TCG</h3>
+            <p>Sobres, mazos, colecciones especiales y cartas sueltas</p>
+            <span class="cat-arrow">→</span>
+          </div>
+        </button>
+
+        <button class="cat-card cat-onepiece" data-filter="onepiece">
+          <div class="cat-bg"></div>
+          <div class="cat-content">
+            <div class="cat-icon">⚓</div>
+            <h3>One Piece TCG</h3>
+            <p>Sobres, starter decks y cartas de los arcos más épicos</p>
+            <span class="cat-arrow">→</span>
+          </div>
+        </button>
+
+        <button class="cat-card cat-lorcana" data-filter="lorcana">
+          <div class="cat-bg"></div>
+          <div class="cat-content">
+            <div class="cat-icon">✨</div>
+            <h3>Lorcana</h3>
+            <p>El TCG de Disney con ilustraciones únicas e irresistibles</p>
+            <span class="cat-arrow">→</span>
+          </div>
+        </button>
+
+        <button class="cat-card cat-magic" data-filter="magic">
+          <div class="cat-bg"></div>
+          <div class="cat-content">
+            <div class="cat-icon">🔮</div>
+            <h3>Magic: The Gathering</h3>
+            <p>Sets, Draft Boosters, Commander y cartas individuales</p>
+            <span class="cat-arrow">→</span>
+          </div>
+        </button>
+
+        <button class="cat-card cat-figuras" data-filter="figuras">
+          <div class="cat-bg"></div>
+          <div class="cat-content">
+            <div class="cat-icon">🎭</div>
+            <h3>Figuras de Colección</h3>
+            <p>Muñecos y figuras de tus personajes favoritos</p>
+            <span class="cat-arrow">→</span>
+          </div>
+        </button>
+
+        <button class="cat-card cat-juegos" data-filter="juegos">
+          <div class="cat-bg"></div>
+          <div class="cat-content">
+            <div class="cat-icon">🎲</div>
+            <h3>Juegos de Mesa</h3>
+            <p>Estrategia, rol, familiar y para toda ocasión</p>
+            <span class="cat-arrow">→</span>
+          </div>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section class="section section-dark" id="productos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Catálogo</span>
+        <h2 class="section-title">Productos destacados</h2>
+      </div>
+
+      <!-- Filtros -->
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="pokemon">Pokémon</button>
+        <button class="filter-btn" data-filter="onepiece">One Piece</button>
+        <button class="filter-btn" data-filter="lorcana">Lorcana</button>
+        <button class="filter-btn" data-filter="magic">Magic</button>
+        <button class="filter-btn" data-filter="figuras">Figuras</button>
+        <button class="filter-btn" data-filter="juegos">Mesa</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <!-- Products injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTO MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-img-wrap">
+        <img id="modalImg" src="" alt="" />
+        <span class="modal-tag" id="modalTag"></span>
+      </div>
+      <div class="modal-info">
+        <h3 id="modalName"></h3>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-meta">
+          <span class="modal-cat" id="modalCat"></span>
+          <a href="#contacto" class="btn btn-primary modal-cta" id="modalCta">Consultar disponibilidad</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOSOTROS -->
+  <section class="section" id="nosotros">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-tag">Quiénes somos</span>
+          <h2 class="section-title">Más que una tienda,<br />una comunidad</h2>
+          <p>En Omega Store TCG somos fanáticos de los juegos de cartas y los coleccionables. Nacimos con la misión de
+            traer los mejores productos TCG y de colección a precios accesibles, con atención personalizada.</p>
+          <p>Encontrá siempre lo último en Pokémon, One Piece, Lorcana y Magic, más figuras de colección, accesorios y
+            juegos de mesa.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">+6</span>
+              <span class="stat-label">Líneas de producto</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Originales</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">TCG</span>
+              <span class="stat-label">Especialistas</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-img-grid">
+            <div class="aig-item aig-1">
+              <img src="images/about-1.jpg" alt="Local Omega Store"
+                onerror="this.closest('.aig-item').classList.add('aig-empty'); this.remove();" />
+            </div>
+            <div class="aig-item aig-2">
+              <img src="images/about-2.jpg" alt="Cartas TCG"
+                onerror="this.closest('.aig-item').classList.add('aig-empty'); this.remove();" />
+            </div>
+            <div class="aig-item aig-3">
+              <img src="images/about-3.jpg" alt="Figuras colección"
+                onerror="this.closest('.aig-item').classList.add('aig-empty'); this.remove();" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO / UBICACIÓN -->
+  <section class="section section-dark" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Encontranos</span>
+        <h2 class="section-title">Contacto & Ubicación</h2>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h4>Ubicación</h4>
+          <p id="contactDireccion">Próximamente disponible</p>
+          <small>Actualizá la dirección en el código</small>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">🕐</div>
+          <h4>Horarios</h4>
+          <div class="horarios" id="contactHorarios">
+            <div class="horario-row"><span>Lunes a Viernes</span><span>10:00 - 20:00 hs</span></div>
+            <div class="horario-row"><span>Sábados</span><span>10:00 - 20:00 hs</span></div>
+            <div class="horario-row"><span>Domingos</span><span>Cerrado</span></div>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">📲</div>
+          <h4>Redes sociales</h4>
+          <div class="social-links">
+            <a href="https://www.instagram.com/omega_store_tcg" target="_blank" rel="noopener"
+              class="social-btn social-instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
+              @omega_store_tcg
+            </a>
+            <a href="https://www.tiktok.com/@omega_store_tcg" target="_blank" rel="noopener"
+              class="social-btn social-tiktok">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.85a8.15 8.15 0 004.77 1.52V6.93a4.85 4.85 0 01-1-.24z" />
+              </svg>
+              @omega_store_tcg
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#" class="logo footer-logo">
+        <img src="images/logo.png" alt="Omega Store TCG" class="logo-img logo-img-footer" />
+        <div class="logo-text-wrap">
+          <span class="logo-name">OMEGA <em>STORE</em></span>
+          <span class="logo-sub">TCG</span>
+        </div>
+      </a>
+      <p class="footer-copy">© 2026 Omega Store TCG. Todos los derechos reservados.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/omega_store_tcg" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@omega_store_tcg" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path
+              d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.85a8.15 8.15 0 004.77 1.52V6.93a4.85 4.85 0 01-1-.24z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
