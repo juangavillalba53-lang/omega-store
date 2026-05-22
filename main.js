@@ -20,7 +20,7 @@ navMobile.querySelectorAll('.mobile-link').forEach(link => {
 
 // ─── Smooth scroll ─────────────────────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+  anchor.addEventListener('click', function (e) {
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
       e.preventDefault();
@@ -33,10 +33,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const CAT_COLORS = {
   pokemon: { bg: '#1a2a3a', accent: '#FFD700', icon: '⚡' },
   onepiece: { bg: '#2a1a1a', accent: '#E8443A', icon: '⚓' },
-  lorcana:  { bg: '#1a1a2e', accent: '#A78BFA', icon: '✨' },
-  magic:    { bg: '#0f1f1a', accent: '#3FCF8E', icon: '🔮' },
-  figuras:  { bg: '#1e1e2e', accent: '#F472B6', icon: '🎭' },
-  juegos:   { bg: '#1a1f2e', accent: '#60A5FA', icon: '🎲' },
+  lorcana: { bg: '#1a1a2e', accent: '#A78BFA', icon: '✨' },
+  magic: { bg: '#0f1f1a', accent: '#3FCF8E', icon: '🔮' },
+  figuras: { bg: '#1e1e2e', accent: '#F472B6', icon: '🎭' },
+  juegos: { bg: '#1a1f2e', accent: '#60A5FA', icon: '🎲' },
 };
 
 // ─── Render products ───────────────────────────────────────
@@ -54,10 +54,9 @@ function renderProducts(filter) {
     card.innerHTML = `
       <div class="pc-img-wrap" data-cat="${p.category}">
         ${p.image
-          ? `<img src="${p.image}" alt="${p.name}" loading="lazy"
+        ? `<img src="${p.image}" alt="${p.name}" loading="lazy"
                onerror="this.closest('.pc-img-wrap').classList.add('pc-placeholder'); this.remove();" />`
-          : ''}
-        <span class="pc-tag ${p.tag === 'Hot' ? 'tag-hot' : p.tag === 'Nuevo' ? 'tag-nuevo' : ''}">${p.tag}</span>
+        : ''}
       </div>
       <div class="pc-info">
         <span class="pc-cat">${catLabel(p.category)}</span>
@@ -112,7 +111,7 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 
 // ─── Modal ─────────────────────────────────────────────────
 const overlay = document.getElementById('modalOverlay');
-const modal   = document.getElementById('modal');
+const modal = document.getElementById('modal');
 
 function openModal(id) {
   const p = PRODUCTS.find(x => x.id === id);

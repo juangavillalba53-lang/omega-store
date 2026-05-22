@@ -20,8 +20,7 @@ const PRODUCTS = [
     id: 1,
     name: "Booster Box Scarlet & Violet",
     category: "pokemon",
-    tag: "Hot",
-    image: "images/poke-scarlet.jpg",
+    image: "images/poke-scarlet.png",
     desc: "36 sobres del set Escarlata y Violeta. Buscá tus cartas ex favoritas.",
     detail: "La Booster Box de Escarlata y Violeta trae 36 sobres del set base con cartas ex, holográficas y ultra raras. Ideal para armar colección o para draft con amigos. Incluye posibilidad de encontrar cartas full art e ilustraciones especiales."
   },
