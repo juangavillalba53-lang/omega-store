@@ -534,7 +534,7 @@ h1, h2, h3, h4 { font-family: var(--font-d); font-weight: 700; line-height: 1.15
 .product-card:hover { transform: translateY(-3px); border-color: var(--border-2); }
 
 .pc-img-wrap {
-  aspect-ratio: 3/4;
+  aspect-ratio: 4/3;
   background: var(--bg-3);
   position: relative;
   overflow: hidden;
