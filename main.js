@@ -119,7 +119,6 @@ function openModal(id) {
 
   document.getElementById('modalName').textContent = p.name;
   document.getElementById('modalDesc').textContent = p.detail;
-  document.getElementById('modalTag').textContent = p.tag;
   document.getElementById('modalCat').textContent = catLabel(p.category);
 
   const img = document.getElementById('modalImg');

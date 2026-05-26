@@ -18,29 +18,27 @@ const PRODUCTS = [
   // ─── POKÉMON ───────────────────────────────────────────────
   {
     id: 1,
-    name: "Booster Box Scarlet & Violet",
+    name: "Scarlet & Violet: Stellar Crown",
     category: "pokemon",
     image: "images/poke-scarlet.png",
-    desc: "36 sobres del set Escarlata y Violeta. Buscá tus cartas ex favoritas.",
-    detail: "La Booster Box de Escarlata y Violeta trae 36 sobres del set base con cartas ex, holográficas y ultra raras. Ideal para armar colección o para draft con amigos. Incluye posibilidad de encontrar cartas full art e ilustraciones especiales."
+    desc: "36 sobres de Stellar Crown con cartas ex y pulls increíbles.",
+    detail: "La Booster Box de Pokémon TCG Scarlet & Violet: Stellar Crown incluye 36 sobres oficiales del set. Encontrá cartas ex, holográficas, ilustraciones especiales y nuevas mecánicas. Ideal para coleccionistas, jugadores competitivos y aperturas."
   },
   {
     id: 2,
-    name: "Elite Trainer Box Pokémon",
+    name: "Sword & Shield: Silver Tempest",
     category: "pokemon",
-    tag: "Disponible",
-    image: "images/poke-etb.jpg",
+    image: "images/poke-etb.png",
     desc: "9 sobres, dados, separadores y accesorios en una sola caja.",
-    detail: "El Elite Trainer Box es el pack definitivo para jugadores y coleccionistas. Incluye 9 sobres de expansión, dados de vida, marcadores de condición, separadores de cartas y funda protectora. Perfecto como regalo o para comenzar a coleccionar."
+    detail: "El Elite Trainer Box de Silver Tempest incluye 9 sobres de expansión, fundas premium, dados, marcadores de condición, separadores y accesorios oficiales de Pokémon TCG. Ideal para jugadores, coleccionistas y aperturas."
   },
   {
     id: 3,
-    name: "Carta Charizard ex (Full Art)",
+    name: "Charizard Ex Super Premium Collection",
     category: "pokemon",
-    tag: "Especial",
-    image: "images/poke-charizard.jpg",
-    desc: "Charizard ex ilustración completa. Una de las cartas más buscadas.",
-    detail: "El icónico Charizard en su versión ex con ilustración full art. Una de las cartas más deseadas por coleccionistas de todo el mundo. Viene en perfecto estado, guardada con sleeve de alta calidad."
+    image: "images/charizard.png",
+    desc: "Colección premium de Charizard ex con figura, promos y sobres.",
+    detail: "La Charizard ex Super Premium Collection incluye cartas promocionales exclusivas, figura coleccionable de Charizard, múltiples sobres de Pokémon TCG y contenido premium para jugadores y coleccionistas."
   },
 
   // ─── ONE PIECE ──────────────────────────────────────────────
@@ -48,99 +46,89 @@ const PRODUCTS = [
     id: 4,
     name: "Booster Box One Piece OP-09",
     category: "onepiece",
-    tag: "Nuevo",
-    image: "images/op-boosterbox.jpg",
-    desc: "24 sobres del último set de One Piece TCG. Personajes del arco Egghead.",
-    detail: "El set OP-09 trae cartas de los arcos más recientes del manga/anime, con personajes como Vegapunk, las Satellites y más. 24 sobres por caja, cada uno con 12 cartas. Buscá las cartas Secret Rare y los líderes alternate art."
+    image: "images/op-boosterbox.png",
+    desc: "24 sobres del set OP-09: Emperors in the New World.",
+    detail: "Booster Box oficial de One Piece Card Game OP-09 con 24 sobres y 12 cartas por pack. Incluye personajes del arco Egghead, nuevas estrategias y cartas muy buscadas por coleccionistas y jugadores."
   },
   {
     id: 5,
-    name: "Starter Deck Luffy",
+    name: "Starter Deck Red Shanks St23",
     category: "onepiece",
-    tag: "Disponible",
-    image: "images/op-luffy-deck.jpg",
-    desc: "Mazo prearmado listo para jugar con el Capitán del Sombrero de Paja.",
-    detail: "El Starter Deck de Luffy incluye un mazo de 51 cartas completamente funcional para empezar a jugar de inmediato. Incluye guía de reglas, ficha de daño y token. Ideal para principiantes o para los fans de la tripulación Mugiwara."
+    image: "images/op-st23.png",
+    desc: "Mazo prearmado listo para jugar con Shanks como líder.",
+    detail: "El Starter Deck ST-23 incluye un mazo completo listo para jugar, cartas exclusivas, guía de reglas y accesorios básicos para comenzar en One Piece Card Game. Ideal para nuevos jugadores y fans de Shanks."
   },
 
   // ─── LORCANA ───────────────────────────────────────────────
   {
     id: 6,
-    name: "Lorcana Booster Box Ursula's Return",
+    name: "Lorcana Starter Deck Tomago & Gadget Hackwrench",
     category: "lorcana",
-    tag: "Hot",
-    image: "images/lorcana-ursula.jpg",
+    image: "images/lorcana-azurita.png",
     desc: "24 sobres del set El Regreso de Úrsula con personajes Disney.",
     detail: "El cuarto set de Disney Lorcana presenta el regreso de Úrsula y decenas de personajes del universo Disney con ilustraciones únicas estilo tinta y acuarela. 24 sobres, cada uno con 12 cartas. Buscá las Enchanted Rares."
   },
   {
     id: 7,
-    name: "Lorcana Starter Deck",
+    name: "Lorcana Ursula's Return Starter Deck",
     category: "lorcana",
-    tag: "Disponible",
-    image: "images/lorcana-starter.jpg",
-    desc: "Mazo de inicio oficial para aprender a jugar Lorcana.",
-    detail: "El Starter Deck de Lorcana incluye 60 cartas preseleccionadas, guía de reglas en español y token de willpower. Perfecto para que toda la familia empiece a jugar al TCG de Disney. Hay distintos personajes disponibles."
+    image: "images/lorcana-ursula.png",
+    desc: "Starter Deck oficial para comenzar en Disney Lorcana.",
+    detail: "Incluye un mazo listo para jugar de 60 cartas, booster pack, fichas y guía de reglas. Ideal para nuevos jugadores y fans de Disney Lorcana."
   },
 
   // ─── MAGIC ─────────────────────────────────────────────────
   {
     id: 8,
-    name: "Draft Booster Box Magic",
+    name: "Final Fantasy Play Booster Box",
     category: "magic",
-    tag: "Disponible",
-    image: "images/magic-draft.jpg",
-    desc: "36 sobres draft del último set. Armá tu mazo y competí.",
-    detail: "La Draft Booster Box trae 36 sobres pensados para el formato draft de Magic: The Gathering. Cada sobre tiene 15 cartas con al menos 1 rara o mítica. Ideal para noches de draft o para ampliar tu colección con el set más reciente."
+    image: "images/final.png",
+    desc: "36 sobres de Magic x Final Fantasy con cartas exclusivas.",
+    detail: "Play Booster Box oficial de Magic: The Gathering x Final Fantasy. Incluye sobres con cartas inspiradas en personajes, invocaciones y momentos icónicos de la saga Final Fantasy. Ideal para jugar, coleccionar y abrir sobres."
   },
   {
     id: 9,
-    name: "Commander Precon",
+    name: "Commander Deck Lorwyn Eclipsed Blight Curse",
     category: "magic",
-    tag: "Nuevo",
-    image: "images/magic-commander.jpg",
-    desc: "Mazo Commander listo para jugar. 100 cartas, comandante incluido.",
-    detail: "Los mazos Commander preconstruidos son la forma más fácil de entrar al formato más popular de Magic. Incluyen 100 cartas únicas, un comandante legendario y tokens. Listo para la mesa desde la primera partida."
+    image: "images/commander.png",
+    desc: "Commander Deck listo para jugar con estrategia de drenaje y control.",
+    detail: "Deck oficial de Magic: The Gathering Commander con 100 cartas, comandante foil y mecánicas centradas en -1/-1 y drain. Ideal para jugadores de Commander que buscan partidas estratégicas y combos potentes."
   },
 
   // ─── FIGURAS ───────────────────────────────────────────────
   {
     id: 10,
-    name: "Figura Pikachu Nendoroid",
+    name: "Nail Dragon Ball",
     category: "figuras",
-    tag: "Colección",
-    image: "images/fig-pikachu.jpg",
-    desc: "Figura articulada de Pikachu con accesorios intercambiables.",
-    detail: "Figura oficial de Pikachu en formato Nendoroid con partes intercambiables y varios accesorios. Articulación completa para múltiples poses. Viene en caja de coleccionista con ventana exhibidora. Producto 100% original."
+    image: "images/nail.png",
+    desc: "Figura coleccionable de Nail inspirada en Dragon Ball Z.",
+    detail: "Figura detallada de Nail con acabados premium, múltiples puntos de articulación y diseño fiel al anime. Ideal para coleccionistas y fans de Dragon Ball."
   },
   {
     id: 11,
     name: "Figura Monkey D. Luffy",
     category: "figuras",
-    tag: "Colección",
-    image: "images/fig-luffy.jpg",
-    desc: "Figura de acción de Luffy con detalle premium. Gear 5 disponible.",
-    detail: "Figura de Monkey D. Luffy con nivel de detalle premium. Incluye múltiples brazos intercambiables y efectos de goma. Escala 1:10, aproximadamente 20cm de alto. Base decorativa incluida. Ideal para fans de One Piece."
+    image: "images/monkey.png",
+    desc: "Figura articulada de Luffy con acabado premium.",
+    detail: "Coleccionable inspirado en One Piece con múltiples puntos de articulación, gran nivel de detalle y diseño fiel al anime. Ideal para exhibición y fans de Monkey D. Luffy."
   },
 
   // ─── JUEGOS DE MESA ────────────────────────────────────────
   {
     id: 12,
-    name: "Catan (Edición Estándar)",
+    name: "¡Basta!",
     category: "juegos",
-    tag: "Clásico",
-    image: "images/mesa-catan.jpg",
-    desc: "El juego de estrategia más popular del mundo. De 3 a 4 jugadores.",
-    detail: "Colonizadores de Catán es el juego de mesa de estrategia más vendido del mundo. Comerciá recursos, construí caminos y ciudades, y lograste ser el primer jugador en llegar a 10 puntos de victoria. Para 3-4 jugadores, partidas de 60-90 minutos."
+    image: "images/basta.png",
+    desc: "El clásico juego de palabras rápido y divertido.",
+    detail: "¡Basta! es un juego de mesa ideal para reuniones y partidas en familia o con amigos. Poné a prueba tu rapidez mental completando categorías antes que los demás."
   },
   {
     id: 13,
     name: "Dixit",
     category: "juegos",
-    tag: "Familiar",
-    image: "images/mesa-dixit.jpg",
-    desc: "Juego creativo de narrativa con ilustraciones surrealistas. Toda la familia.",
-    detail: "Dixit es un juego de narración y asociación libre con cartas de ilustraciones surrealistas y poéticas. Uno de los jugadores da una pista, los demás eligen su carta más afín, y hay que adivinar cuál es la original. Para 3-6 jugadores de todas las edades."
+    image: "images/dixit.png",
+    desc: "Juego creativo de imaginación y narrativa para toda la familia.",
+    detail: "Dixit es un juego de mesa basado en la imaginación, la interpretación y las historias. Sus cartas con ilustraciones surrealistas crean partidas únicas ideales para jugar con amigos y familia."
   }
 
 ];
