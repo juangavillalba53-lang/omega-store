@@ -94,7 +94,7 @@ function renderProducts(filter) {
 function catLabel(cat) {
   const map = {
     pokemon: 'Pokémon', onepiece: 'One Piece', lorcana: 'Lorcana',
-    magic: 'Magic', figuras: 'Figuras', juegos: 'Juegos de Mesa'
+    magic: 'Magic', figuras: 'Figuras', yugioh: 'Yu-Gi-Oh!',
   };
   return map[cat] || cat;
 }
